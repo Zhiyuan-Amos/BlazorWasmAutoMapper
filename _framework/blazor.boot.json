@@ -2,14 +2,14 @@
   "cacheBootResources": true,
   "config": [ ],
   "debugBuild": false,
-  "entryAssembly": "BlazorDependenciesDemo",
+  "entryAssembly": "BlazorWasmAutoMapper",
   "icuDataMode": 0,
   "linkerEnabled": true,
   "resources": {
     "assembly": {
       "AutoMapper.dll": "sha256-IPLECjhzAo5JapVuuAB\/ZT5OGwiSRZEKxtY7EMNCH38=",
       "AutoMapper.Extensions.Microsoft.DependencyInjection.dll": "sha256-EgxNMqkSDuvW0qfJ51BwzzHNyFgz66BQsDHK1XnhZUc=",
-      "BlazorDependenciesDemo.dll": "sha256-oaj60NR6IpX\/jlhnI\/jK\/DGy02KmvQXjjRcbwMrQuAE=",
+      "BlazorWasmAutoMapper.dll": "sha256-2beh4ejS5qzKJEDG7dF8wvDs81geGgVR4zvg0jiRr4A=",
       "Microsoft.AspNetCore.Components.dll": "sha256-o9IsJXJUPcPqLPFLpwmDOhAMU3\/V6y2ai903fz9B7Bs=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-jSEc6w1lUN8bup\/iXTVCIBk1vB+bHUZ\/WLq59QvXE1g=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-n1Qu4\/3OMMXDbA5D2sQDdzDRwmL63fo4yO7E9L7hPZo=",
