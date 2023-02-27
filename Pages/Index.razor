@@ -1,23 +1,5 @@
 ﻿@page "/"
-@using AutoMapper
 
-<h1>Hello, world!</h1>
+<PageTitle>Sample Page</PageTitle>
 
-Loading time: @_elapsed milliseconds
-
-@code
-{
-    long _elapsed;
-    [Inject] private IMapper Mapper { get; init; }
-
-    private List<DummyOne> Dummies => Mapper.Map<List<DummyOne>>(new List<DummyTwo>());
-
-    protected override void OnAfterRender(bool firstRender)
-    {
-        if (firstRender)
-        {
-            _elapsed = TimeStateContainer.Stop();
-            StateHasChanged();
-        }
-    }
-}
+Loading time: @_elapsed ms

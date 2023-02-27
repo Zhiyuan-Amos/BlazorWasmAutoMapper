@@ -1,22 +1,14 @@
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Microsoft.Extensions.DependencyInjection;
+using BlazorWasmAutoMapper;
 
-namespace BlazorWasmAutoMapper
-{
-    public class Program
-    {
-        public static async Task Main(string[] args)
-        {
-            TimeStateContainer.Start();
+TimeStateContainer.Start();
 
-            var builder = WebAssemblyHostBuilder.CreateDefault(args);
-            builder.RootComponents.Add<App>("#app");
+var builder = WebAssemblyHostBuilder.CreateDefault(args);
+builder.RootComponents.Add<App>("#app");
+builder.RootComponents.Add<HeadOutlet>("head::after");
 
-            builder.Services
-                .AddAutoMapper(typeof(DummyProfile));
+builder.Services
+    .AddAutoMapper(typeof(DummyProfile));
 
-            await builder.Build().RunAsync();
-        }
-    }
-}
+await builder.Build().RunAsync();

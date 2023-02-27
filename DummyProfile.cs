@@ -1,12 +1,11 @@
-﻿using AutoMapper;
+using AutoMapper;
 
-namespace BlazorWasmAutoMapper
+namespace BlazorWasmAutoMapper;
+
+public class DummyProfile : Profile
 {
-    public class DummyProfile : Profile
+    public DummyProfile()
     {
-        public DummyProfile()
-        {
-            CreateMap<DummyOne, DummyTwo>().ReverseMap();
-        }
+        CreateMap<DummyOne, DummyTwo>();
     }
 }

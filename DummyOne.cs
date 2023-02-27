@@ -1,6 +1,5 @@
-﻿namespace BlazorWasmAutoMapper
+namespace BlazorWasmAutoMapper;
+
+public class DummyOne
 {
-    public class DummyOne
-    {
-    }
 }
